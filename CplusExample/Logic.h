@@ -5,11 +5,13 @@
 //  Created by Work on 13/03/2024.
 //
 
-// Logic.hpp
+#ifdef __cplusplus
+extern "C"
+{
+#endif
 
-#ifndef Logic_hpp
-#define Logic_hpp
+void helloFromCPlus();
 
-#include <stdio.h>
-
-#endif /* Logic_hpp */
+#ifdef __cplusplus
+}
+#endif
