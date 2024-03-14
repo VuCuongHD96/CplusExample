@@ -11,3 +11,7 @@
 void helloFromCPlus() {
     std::cout << "Hello, world!" << std::endl;
 };
+
+void Human::addAge(int yearsToAdd) {
+  age += yearsToAdd;
+}

@@ -10,7 +10,15 @@ extern "C"
 {
 #endif
 
+// MARK: - Function
 void helloFromCPlus();
+
+// MARK: - Struct
+struct Human {
+    int age;
+    
+    void addAge(int yearsToAdd);
+};
 
 #ifdef __cplusplus
 }
