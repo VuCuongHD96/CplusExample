@@ -6,3 +6,8 @@
 //
 
 #include "Logic.h"
+#include <iostream>
+
+void helloFromCPlus() {
+    std::cout << "Hello, world!" << std::endl;
+};
