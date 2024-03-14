@@ -13,6 +13,7 @@
 		961963562BA19B2D0026AB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961963542BA19B2D0026AB36 /* Main.storyboard */; };
 		961963582BA19B2E0026AB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961963572BA19B2E0026AB36 /* Assets.xcassets */; };
 		9619635B2BA19B2E0026AB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961963592BA19B2E0026AB36 /* LaunchScreen.storyboard */; };
+		961963652BA19C7B0026AB36 /* Logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961963632BA19C7B0026AB36 /* Logic.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		961963572BA19B2E0026AB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9619635A2BA19B2E0026AB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9619635C2BA19B2E0026AB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961963622BA19C7A0026AB36 /* CplusExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CplusExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		961963632BA19C7B0026AB36 /* Logic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Logic.cpp; sourceTree = "<group>"; };
+		961963642BA19C7B0026AB36 /* Logic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logic.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,9 @@
 				9619634E2BA19B2D0026AB36 /* AppDelegate.swift */,
 				961963502BA19B2D0026AB36 /* SceneDelegate.swift */,
 				961963522BA19B2D0026AB36 /* ViewController.swift */,
+				961963632BA19C7B0026AB36 /* Logic.cpp */,
+				961963642BA19C7B0026AB36 /* Logic.h */,
+				961963622BA19C7A0026AB36 /* CplusExample-Bridging-Header.h */,
 				961963542BA19B2D0026AB36 /* Main.storyboard */,
 				961963572BA19B2E0026AB36 /* Assets.xcassets */,
 				961963592BA19B2E0026AB36 /* LaunchScreen.storyboard */,
@@ -99,6 +106,7 @@
 				TargetAttributes = {
 					9619634A2BA19B2D0026AB36 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -138,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961963652BA19C7B0026AB36 /* Logic.cpp in Sources */,
 				961963532BA19B2D0026AB36 /* ViewController.swift in Sources */,
 				9619634F2BA19B2D0026AB36 /* AppDelegate.swift in Sources */,
 				961963512BA19B2D0026AB36 /* SceneDelegate.swift in Sources */,
@@ -290,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GCAT449K7M;
@@ -309,6 +319,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cuong.ios.CplusExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CplusExample/CplusExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GCAT449K7M;
@@ -338,6 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cuong.ios.CplusExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CplusExample/CplusExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
