@@ -6,12 +6,11 @@
 //
 
 #ifdef __cplusplus
-extern "C"
-{
-#endif
 
-void helloFromCPlus();
+class Calculator {
+public:
+    static int add(int a, int b);
+    static int sub(int a, int b);
+};
 
-#ifdef __cplusplus
-}
 #endif
