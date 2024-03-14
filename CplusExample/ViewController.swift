@@ -15,14 +15,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        helloFromCPlus()
     }
     
     @IBAction func addAction(_ sender: Any) {
-        
+        let firstText = firstTextField.text ?? ""
+        let firstNumber = Int32(firstText) ?? 0
+        let secondText = secondTextField.text ?? ""
+        let secondNumber = Int32(secondText) ?? 0
+        let sumResult = Calculator.add(firstNumber, secondNumber)
+        resultLabel.text = String(sumResult)
     }
     
     @IBAction func minusAction(_ sender: Any) {
-        
+        let firstText = firstTextField.text ?? ""
+        let firstNumber = Int32(firstText) ?? 0
+        let secondText = secondTextField.text ?? ""
+        let secondNumber = Int32(secondText) ?? 0
+        let subResult = Calculator.sub(firstNumber, secondNumber)
+        resultLabel.text = String(subResult)
     }
 }

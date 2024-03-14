@@ -13,7 +13,7 @@
 		961963562BA19B2D0026AB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961963542BA19B2D0026AB36 /* Main.storyboard */; };
 		961963582BA19B2E0026AB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961963572BA19B2E0026AB36 /* Assets.xcassets */; };
 		9619635B2BA19B2E0026AB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961963592BA19B2E0026AB36 /* LaunchScreen.storyboard */; };
-		961963652BA19C7B0026AB36 /* Logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961963632BA19C7B0026AB36 /* Logic.cpp */; };
+		961963652BA19C7B0026AB36 /* Calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961963632BA19C7B0026AB36 /* Calculator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		9619635A2BA19B2E0026AB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9619635C2BA19B2E0026AB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		961963622BA19C7A0026AB36 /* CplusExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CplusExample-Bridging-Header.h"; sourceTree = "<group>"; };
-		961963632BA19C7B0026AB36 /* Logic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Logic.cpp; sourceTree = "<group>"; };
-		961963642BA19C7B0026AB36 /* Logic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logic.h; sourceTree = "<group>"; };
+		961963632BA19C7B0026AB36 /* Calculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Calculator.cpp; sourceTree = "<group>"; };
+		961963642BA19C7B0026AB36 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,8 @@
 				9619634E2BA19B2D0026AB36 /* AppDelegate.swift */,
 				961963502BA19B2D0026AB36 /* SceneDelegate.swift */,
 				961963522BA19B2D0026AB36 /* ViewController.swift */,
-				961963632BA19C7B0026AB36 /* Logic.cpp */,
-				961963642BA19C7B0026AB36 /* Logic.h */,
+				961963642BA19C7B0026AB36 /* Calculator.h */,
+				961963632BA19C7B0026AB36 /* Calculator.cpp */,
 				961963622BA19C7A0026AB36 /* CplusExample-Bridging-Header.h */,
 				961963542BA19B2D0026AB36 /* Main.storyboard */,
 				961963572BA19B2E0026AB36 /* Assets.xcassets */,
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961963652BA19C7B0026AB36 /* Logic.cpp in Sources */,
+				961963652BA19C7B0026AB36 /* Calculator.cpp in Sources */,
 				961963532BA19B2D0026AB36 /* ViewController.swift in Sources */,
 				9619634F2BA19B2D0026AB36 /* AppDelegate.swift in Sources */,
 				961963512BA19B2D0026AB36 /* SceneDelegate.swift in Sources */,
@@ -321,6 +321,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CplusExample/CplusExample-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,6 +355,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CplusExample/CplusExample-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
