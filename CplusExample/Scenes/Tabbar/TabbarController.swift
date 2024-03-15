@@ -24,8 +24,13 @@ class TabbarController: UITabBarController {
                                              image: UIImage(named: "calculator")?
             .withRenderingMode(.alwaysOriginal),
                                              tag: 0)
+        let categoryTabItem = UITabBarItem(title: "Category",
+                                           image: UIImage(named: "category")?.withRenderingMode(.alwaysOriginal),
+                                           tag: 1)
         let calculatorScreen = CalculatorViewController()
         calculatorScreen.tabBarItem = calculatorTabItem
-        viewControllers = [calculatorScreen]
+        let categoryScreen = CategoryViewController()
+        categoryScreen.tabBarItem = categoryTabItem
+        viewControllers = [categoryScreen, calculatorScreen]
     }
 }
