@@ -13,6 +13,10 @@
 		961963582BA19B2E0026AB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961963572BA19B2E0026AB36 /* Assets.xcassets */; };
 		9619635B2BA19B2E0026AB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961963592BA19B2E0026AB36 /* LaunchScreen.storyboard */; };
 		961963652BA19C7B0026AB36 /* Calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961963632BA19C7B0026AB36 /* Calculator.cpp */; };
+		964AFC422BA3F38D00B852CE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFC402BA3F38D00B852CE /* CategoryViewController.swift */; };
+		964AFC432BA3F38D00B852CE /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AFC412BA3F38D00B852CE /* CategoryViewController.xib */; };
+		964AFC522BA4452800B852CE /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFC502BA4452800B852CE /* CategoryCell.swift */; };
+		964AFC532BA4452800B852CE /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AFC512BA4452800B852CE /* CategoryCell.xib */; };
 		96B2CA7F2BA3EA080055088E /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B2CA7E2BA3EA080055088E /* CalculatorViewController.xib */; };
 		96B2CA822BA3EAE80055088E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B2CA812BA3EAE80055088E /* TabbarController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +32,10 @@
 		961963622BA19C7A0026AB36 /* CplusExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CplusExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		961963632BA19C7B0026AB36 /* Calculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Calculator.cpp; sourceTree = "<group>"; };
 		961963642BA19C7B0026AB36 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		964AFC402BA3F38D00B852CE /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		964AFC412BA3F38D00B852CE /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		964AFC502BA4452800B852CE /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		964AFC512BA4452800B852CE /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		96B2CA7E2BA3EA080055088E /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
 		96B2CA812BA3EAE80055088E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,9 +80,29 @@
 			path = CplusExample;
 			sourceTree = "<group>";
 		};
+		964AFC3F2BA3F34E00B852CE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				964AFC4F2BA4452800B852CE /* Cell */,
+				964AFC402BA3F38D00B852CE /* CategoryViewController.swift */,
+				964AFC412BA3F38D00B852CE /* CategoryViewController.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		964AFC4F2BA4452800B852CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				964AFC502BA4452800B852CE /* CategoryCell.swift */,
+				964AFC512BA4452800B852CE /* CategoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		96B2CA7C2BA3E9A60055088E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				964AFC3F2BA3F34E00B852CE /* Category */,
 				96B2CA802BA3EAD90055088E /* Tabbar */,
 				96B2CA7D2BA3E9B90055088E /* Calculator */,
 			);
@@ -161,8 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9619635B2BA19B2E0026AB36 /* LaunchScreen.storyboard in Resources */,
+				964AFC532BA4452800B852CE /* CategoryCell.xib in Resources */,
 				961963582BA19B2E0026AB36 /* Assets.xcassets in Resources */,
 				96B2CA7F2BA3EA080055088E /* CalculatorViewController.xib in Resources */,
+				964AFC432BA3F38D00B852CE /* CategoryViewController.xib in Resources */,
 				961963562BA19B2D0026AB36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,10 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964AFC422BA3F38D00B852CE /* CategoryViewController.swift in Sources */,
 				961963652BA19C7B0026AB36 /* Calculator.cpp in Sources */,
 				961963532BA19B2D0026AB36 /* CalculatorViewController.swift in Sources */,
 				9619634F2BA19B2D0026AB36 /* AppDelegate.swift in Sources */,
 				96B2CA822BA3EAE80055088E /* TabbarController.swift in Sources */,
+				964AFC522BA4452800B852CE /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
