@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CalculatorViewController.swift
 //  CplusExample
 //
 //  Created by Work on 13/03/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculatorViewController: UIViewController {
 
     @IBOutlet private weak var resultLabel: UILabel!
     @IBOutlet private weak var secondTextField: UITextField!
