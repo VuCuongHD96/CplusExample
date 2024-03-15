@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class TabbarController: UITabBarController {
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,7 +25,8 @@ class TabbarController: UITabBarController {
             .withRenderingMode(.alwaysOriginal),
                                              tag: 0)
         let categoryTabItem = UITabBarItem(title: "Category",
-                                           image: UIImage(named: "category")?.withRenderingMode(.alwaysOriginal),
+                                           image: UIImage(named: "category")?
+            .withRenderingMode(.alwaysOriginal),
                                            tag: 1)
         let calculatorScreen = CalculatorViewController()
         calculatorScreen.tabBarItem = calculatorTabItem

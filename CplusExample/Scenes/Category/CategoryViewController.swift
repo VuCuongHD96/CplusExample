@@ -11,6 +11,8 @@ class CategoryViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
+    var viewModel = CategoryViewModel()
+    
     struct Constant {
         static let nibName = "CategoryCell"
     }
@@ -18,6 +20,11 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        setupData()
+    }
+    
+    private func setupData() {
+        viewModel.fetchCategoryList()
     }
     
     private func setupTableView() {
@@ -33,12 +40,14 @@ extension CategoryViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.nibName, for: indexPath) as? CategoryCell else {
             return UITableViewCell()
         }
-        cell.setContent(data: "Adventure")
+        let categoryList = viewModel.categoryList
+        let categoryItem = categoryList[indexPath.row]
+        cell.setContent(data: categoryItem)
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.categoryList.count
     }
 }
 
