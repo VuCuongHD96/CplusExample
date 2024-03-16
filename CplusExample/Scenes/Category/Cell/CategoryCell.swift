@@ -30,9 +30,10 @@ final class CategoryCell: UITableViewCell {
     }
     
     // MARK: - Data
-    func setContent(data: String) {
-        let underLineText = NSAttributedString(string: data, attributes: attributeUnderline)
+    func setContent(data: ProductCategory) {
+        let name = String(data.name)
+        let underLineText = NSAttributedString(string: name, attributes: attributeUnderline)
         genreTitle.attributedText = underLineText
-        genreImageView.image = UIImage(named: data)
+        genreImageView.image = UIImage(named: name)
     }
 }
