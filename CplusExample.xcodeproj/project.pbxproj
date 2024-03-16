@@ -23,6 +23,7 @@
 		964AFC642BA44C0300B852CE /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFC632BA44C0300B852CE /* CategoryService.swift */; };
 		964AFC692BA450D000B852CE /* CategoryTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFC682BA450D000B852CE /* CategoryTranslator.swift */; };
 		964AFC6B2BA548F500B852CE /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AFC6A2BA548F500B852CE /* CategoryViewModel.swift */; };
+		964AFC6E2BA5521B00B852CE /* CategoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 964AFC6C2BA5521B00B852CE /* CategoryManager.cpp */; };
 		96B2CA7F2BA3EA080055088E /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B2CA7E2BA3EA080055088E /* CalculatorViewController.xib */; };
 		96B2CA822BA3EAE80055088E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B2CA812BA3EAE80055088E /* TabbarController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,8 @@
 		964AFC632BA44C0300B852CE /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		964AFC682BA450D000B852CE /* CategoryTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTranslator.swift; sourceTree = "<group>"; };
 		964AFC6A2BA548F500B852CE /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		964AFC6C2BA5521B00B852CE /* CategoryManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CategoryManager.cpp; sourceTree = "<group>"; };
+		964AFC6D2BA5521B00B852CE /* CategoryManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CategoryManager.hpp; sourceTree = "<group>"; };
 		96B2CA7E2BA3EA080055088E /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
 		96B2CA812BA3EAE80055088E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +105,8 @@
 				964AFC542BA447B800B852CE /* Cell */,
 				964AFC402BA3F38D00B852CE /* CategoryViewController.swift */,
 				964AFC6A2BA548F500B852CE /* CategoryViewModel.swift */,
+				964AFC6C2BA5521B00B852CE /* CategoryManager.cpp */,
+				964AFC6D2BA5521B00B852CE /* CategoryManager.hpp */,
 				964AFC412BA3F38D00B852CE /* CategoryViewController.xib */,
 			);
 			path = Category;
@@ -285,6 +290,7 @@
 				964AFC422BA3F38D00B852CE /* CategoryViewController.swift in Sources */,
 				961963652BA19C7B0026AB36 /* Calculator.cpp in Sources */,
 				964AFC6B2BA548F500B852CE /* CategoryViewModel.swift in Sources */,
+				964AFC6E2BA5521B00B852CE /* CategoryManager.cpp in Sources */,
 				964AFC572BA447B800B852CE /* CategoryCell.swift in Sources */,
 				964AFC5D2BA4493200B852CE /* CategoryEntity.swift in Sources */,
 				961963532BA19B2D0026AB36 /* CalculatorViewController.swift in Sources */,

@@ -10,8 +10,8 @@ import UIKit
 final class CategoryCell: UITableViewCell {
     
     // MARK: - Outlet
-    @IBOutlet private weak var genreImageView: UIImageView!
-    @IBOutlet private weak var genreTitle: UILabel!
+    @IBOutlet private weak var categoryImageView: UIImageView!
+    @IBOutlet private weak var categoryTitle: UILabel!
     
     // MARK: - Define
     typealias Attribute = [NSAttributedString.Key: Any]
@@ -33,7 +33,7 @@ final class CategoryCell: UITableViewCell {
     func setContent(data: ProductCategory) {
         let name = String(data.name)
         let underLineText = NSAttributedString(string: name, attributes: attributeUnderline)
-        genreTitle.attributedText = underLineText
-        genreImageView.image = UIImage(named: name)
+        categoryTitle.attributedText = underLineText
+        categoryImageView.image = UIImage(named: name)
     }
 }
