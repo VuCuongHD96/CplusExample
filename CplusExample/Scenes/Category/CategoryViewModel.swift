@@ -10,9 +10,25 @@ import Foundation
 struct CategoryViewModel {
     
     let usecase = CategoryUseCase()
-    var categoryList: [ProductCategory] = []
+    private var originCategoryList: [ProductCategory] = []
+    var filterCategoryList: [ProductCategory] = []
     
     mutating func fetchCategoryList() {
-        categoryList = usecase.getCategoryList()
+        originCategoryList = usecase.getCategoryList()
+        filterCategoryList = originCategoryList
+    }
+
+    mutating func findCategory(name: String) {
+        if name.isEmpty {
+            filterCategoryList = originCategoryList
+        } else {
+            let productCategoryPointer = UnsafeMutablePointer<ProductCategory>.allocate(capacity: originCategoryList.count)
+            productCategoryPointer.initialize(from: originCategoryList, count: originCategoryList.count)
+            let sdtName = std.string(name);
+            let foundCategoryArray = CategoryManager.findCategoryList(productCategoryPointer, sdtName)
+            filterCategoryList = foundCategoryArray.map {
+                ProductCategory($0.id, $0.name)
+            }
+        }
     }
 }

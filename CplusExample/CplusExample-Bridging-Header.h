@@ -4,3 +4,4 @@
 
 #include "Calculator.h"
 #include "ProductCategory.hpp"
+#include "CategoryManager.hpp"

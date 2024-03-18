@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController" customModule="CplusExample" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="mGT-C4-YZM" id="cSC-Sf-BrY"/>
                 <outlet property="tableView" destination="8j6-Kk-iSt" id="4Cu-nS-1af"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,19 +22,29 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8j6-Kk-iSt">
-                    <rect key="frame" x="5" y="59" width="383" height="759"/>
+                    <rect key="frame" x="10" y="125" width="373" height="693"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="mGT-C4-YZM">
+                    <rect key="frame" x="5" y="59" width="383" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="2oy-FH-glY"/>
+                    </connections>
+                </searchBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
             <constraints>
-                <constraint firstItem="8j6-Kk-iSt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="61z-pY-sa3"/>
-                <constraint firstItem="8j6-Kk-iSt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CvF-2n-2tE"/>
+                <constraint firstItem="8j6-Kk-iSt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="61z-pY-sa3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8j6-Kk-iSt" secondAttribute="bottom" id="Ifw-I8-e8g"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8j6-Kk-iSt" secondAttribute="trailing" constant="5" id="kbY-1C-bBA"/>
+                <constraint firstAttribute="trailing" secondItem="mGT-C4-YZM" secondAttribute="trailing" constant="5" id="RWO-Vg-4nv"/>
+                <constraint firstItem="mGT-C4-YZM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="TA3-Jg-7hu"/>
+                <constraint firstItem="8j6-Kk-iSt" firstAttribute="top" secondItem="mGT-C4-YZM" secondAttribute="bottom" constant="10" id="Z8x-Gq-2QY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8j6-Kk-iSt" secondAttribute="trailing" constant="10" id="kbY-1C-bBA"/>
+                <constraint firstItem="mGT-C4-YZM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vDu-j0-MqC"/>
             </constraints>
-            <point key="canvasLocation" x="28" y="20"/>
+            <point key="canvasLocation" x="26.717557251908396" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>

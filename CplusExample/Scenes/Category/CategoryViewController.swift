@@ -9,6 +9,7 @@ import UIKit
 
 class CategoryViewController: UIViewController {
     
+    @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
     
     var viewModel = CategoryViewModel()
@@ -40,14 +41,14 @@ extension CategoryViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.nibName, for: indexPath) as? CategoryCell else {
             return UITableViewCell()
         }
-        let categoryList = viewModel.categoryList
+        let categoryList = viewModel.filterCategoryList
         let categoryItem = categoryList[indexPath.row]
         cell.setContent(data: categoryItem)
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.categoryList.count
+        return viewModel.filterCategoryList.count
     }
 }
 
@@ -55,5 +56,13 @@ extension CategoryViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 230
+    }
+}
+
+extension CategoryViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.findCategory(name: searchText)
+        tableView.reloadData()
     }
 }
